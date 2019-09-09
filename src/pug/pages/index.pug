@@ -1,0 +1,118 @@
+doctype html
+html(lang="ru-RU")
+    head
+        link(rel="stylesheet" type="text/css" href="style.css")
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap&subset=cyrillic")
+        title Helyfly
+        meta(name="viewport" content="width=device-width,initial-scale=1.0")
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=28132266-0fc0-4234-9f38-e3a9ee0c84b7")
+        script(src="libs.min.js")
+    body
+        include ../subfiles/header.pug
+
+        include ../subfiles/banner.pug
+
+
+        div(class="content content-mod-padding")
+
+            include ../subfiles/description.pug
+
+            include ../subfiles/photos.pug
+        
+            include ../subfiles/about-photographer.pug
+
+            include ../subfiles/closest-survey.pug
+            
+           
+
+            div(class="map map-mod")
+                div(class="map-container" id="map")
+                div(class="steps")
+                    div(class="steps__step")
+                        div(class="steps__circle")
+                            p(class="steps__circle-text") 1
+                        div(class="steps__text-container") 
+                            p(class="steps__caption") Где встречаемся?
+                            p(class="steps__text") Москва
+                    div(class="steps__step")
+                        div(class="steps__circle")
+                            p(class="steps__circle-text") 2
+                        div(class="steps__text-container") 
+                            p(class="steps__caption") Время съемки?
+                            p(class="steps__text") 3 часа
+                    div(class="steps__step")
+                        div(class="steps__circle")
+                            p(class="steps__circle-text") 3
+                        div(class="steps__text-container") 
+                            p(class="steps__caption") Мест осталось:
+                            p(class="steps__text") 2 места
+                    div(class="steps__step")
+                        div(class="steps__circle")
+                            img(class="steps__circle-ava" src="img/avatar.jpg" alt="")
+                        div(class="steps__text-container") 
+                            p(class="steps__caption") Мария Иванова
+                            p(class="steps__text") Фотограф
+                            a(class="steps__link") Показать больше информации
+                            
+                        
+                                              
+            div(class="reviews")
+                div(class="reviews__caption") Отзывы:
+                div(class="review-block")
+                    div(class="review-item")
+                        div(class="review-item__top")
+                            img(class="review-item__avatar-img" src="img/ava0.png" alt="")
+                            div(class="review-item__top-text")
+                                p(class="review-item__name review-item__item-mod middle-txt") Валерия Антонова
+                                p(class="review-item__position review-item__item-mod") Арт-директор
+                                div(class="review-item__rate")
+                                    img(class="review-item__fiveStars" src="svg/fiveStars.svg" alt="")
+                                    div(class="review-item__mood-contrainer review-item__mood-contrainer-mod-desktop")
+                                        img(class="review-item__mood-img" src="svg/ok.svg" alt="")
+                                        p(class="review-item__mood-text") Супер! Я бы заказала съемку снова!
+                        div(class="review-item__information")
+                            div(class="review-item__rate")
+                                div(class="review-item__mood-contrainer review-item__mood-contrainer-mod-mobile")
+                                    img(class="review-item__mood-img" src="svg/ok.svg" alt="")
+                                    p(class="review-item__mood-text") Супер! Я бы заказала съемку снова!
+                            p(class="review-item__text review-item__item-mod") Хотим выразить огромную благодарность вашей компании! 
+                                                        | Получили море ощущений, все прошло просто замечательно. 
+                                                        | Фотки получились великолепные, отдельное спасибо фотографу!
+                            p(class="review-item__date") 27 Апреля, 2019г.  
+                            div(class="review-item__line")
+                div(class="showMore")
+                    img(class="showMore__arrow" src="svg/Arrow.svg" alt="")
+                    p(class="showMore__text") Показать Все (134)
+                    img(class="showMore__arrow" src="svg/Arrow.svg" alt="")
+            footer(class="footer")
+                div(class="footer__top")
+                    div(class="footer__logo")
+                        img(class="footer__logo-img" src="svg/logo.svg" alt="")
+                    div(class="footer__social")
+                        a(class="footer__social-link footer__social-vk")
+                            img(class="footer__social-vk-img" src="svg/vk.svg" alt="")
+                        a(class="footer__social-link footer__social-fb")
+                            img(class="footer__social-fb-img" src="svg/Facebook.svg" alt="")
+                        a(class="footer__social-link footer__social-inst")
+                            img(class="footer__social-inst-img" src="svg/Instragram.svg" alt="")
+                        div(class="language-selector")
+                            p(class="language-selector__current-lang") RU
+                            img(class="language-selector__arrow" src="svg/Arrow.svg" alt="")               
+                div(class="footer__bottom")
+                    div(class="pay-icons")
+                        img(class="master-card-img" src="svg/MC.svg" alt="")
+                        img(class="visa-img" src="svg/VISA.svg" alt="")
+                    div(class="footer__text")
+                        p(class="support") Тех. поддержка: 8(800)700-00-00
+                        p(class="copyright") © 2018 HELYFLY. All Rights Reserved.
+        script(src="script.js")
+                           
+
+
+
+    
+            
+        
+
+
+

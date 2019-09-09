@@ -1,0 +1,132 @@
+@media (max-width: 375px)
+    .photos
+        width 96vw
+    
+    .photos__photos-container
+        overflow-x: scroll
+        width 90vw
+
+    .photos_photo-item
+        flex-shrink: 0
+        margin-right 15px   
+
+    .photos_photo-item
+        width: 80vw
+
+    .photos_button-show-all
+        display none
+
+    .photos_caption
+        text-align center
+        font-size 28px
+        line-height 34px
+
+@media (min-width: 376px) and (max-width: 767px)
+    .photos
+        width 90vw
+
+    .photos__photos-container
+        overflow-x: scroll
+        width 90vw
+
+    .photos_photo-item
+        flex-shrink: 0
+        margin-right 15px   
+
+    .photos_photo-item
+        width: 30vw
+
+    .photos_button-show-all
+        display none
+
+    .photos_caption
+        text-align center
+        font-size 28px
+        line-height 34px
+
+
+@media (min-width: 768px) and (max-width: 991px)
+    .photos
+        width 80vw
+
+    .photos__photos-container
+        flex-wrap: wrap        
+
+    .photos_photo-item
+        width: 26vw
+    
+    .photos_button-show-all
+        display flex
+        justify-content center
+        align-items: center
+
+    .photos_caption
+        font-size: 18px
+
+@media (min-width: 992px) and (max-width: 1200px)
+    .photos
+        width 70vw
+
+    .photos__photos-container
+        flex-wrap: wrap        
+
+    .photos_photo-item
+        width: 23vw
+    
+    .photos_button-show-all
+        display flex
+        justify-content center
+        align-items: center
+
+    .photos_caption
+        font-size: 19px
+
+
+@media (min-width: 1201px)
+    .photos
+        width 60vw
+
+    .photos__photos-container
+        flex-wrap: wrap
+
+    .photos_photo-item
+        width: 14vw
+
+    .photos_button-show-all
+        display flex
+        justify-content center
+        align-items: center
+
+    .photos_caption
+        font-size: 20px
+
+.photos
+    display flex
+    flex-direction column
+
+.photos_caption
+    font-weight: 500
+    color: #37373F
+
+.photos__photos-container
+    display flex
+    justify-content: space-between
+
+.photos_photo-item
+    height auto
+    margin-bottom 15px
+
+.photos_button-show-all__arrow
+    margin 0 15px 0 15px
+
+.photos_button-show-all__caption
+    font-weight: 500
+    color #5286EC
+    font-size: 15px
+    margin: 20px 5px
+    cursor pointer
+
+.photos_line
+    height 1px
+    width 100%
+    background-color #C7C7C7
