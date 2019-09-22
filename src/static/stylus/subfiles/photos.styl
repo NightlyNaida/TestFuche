@@ -4,37 +4,31 @@
     
     .photos__photos-container
         overflow-x: scroll
-        width 90vw
+        display flex
 
     .photos_photo-item
-        flex-shrink: 0
-        margin-right 15px   
-
-    .photos_photo-item
-        width: 80vw
-
-    .photos_button-show-all
-        display none
+        margin-right 10px;
+        flex-shrink: 0;
 
     .photos_caption
         text-align center
         font-size 28px
         line-height 34px
 
+    .photos_button-show-all
+        display none
+
 @media (min-width: 376px) and (max-width: 767px)
     .photos
         width 90vw
 
     .photos__photos-container
-        overflow-x: scroll
-        width 90vw
+        overflow-x scroll
+        display flex
 
     .photos_photo-item
-        flex-shrink: 0
-        margin-right 15px   
-
-    .photos_photo-item
-        width: 30vw
+        margin-right 10px;
+        flex-shrink: 0;
 
     .photos_button-show-all
         display none
@@ -50,15 +44,18 @@
         width 80vw
 
     .photos__photos-container
-        flex-wrap: wrap        
-
-    .photos_photo-item
-        width: 26vw
+        display grid
+        grid-template-columns: 48% 48%
+        grid-gap 10px
+      
+    .photos_photo-item-hidden
+        display none
     
     .photos_button-show-all
         display flex
         justify-content center
         align-items: center
+    
 
     .photos_caption
         font-size: 18px
@@ -68,10 +65,12 @@
         width 70vw
 
     .photos__photos-container
-        flex-wrap: wrap        
+        display grid
+        grid-template-columns: 32% 32% 32% 
+        grid-gap 10px     
 
-    .photos_photo-item
-        width: 23vw
+    .photos_photo-item-hidden
+        display none
     
     .photos_button-show-all
         display flex
@@ -87,10 +86,12 @@
         width 60vw
 
     .photos__photos-container
-        flex-wrap: wrap
+        display grid
+        grid-template-columns: 24% 24% 24% 24%
+        grid-gap 10px
 
-    .photos_photo-item
-        width: 14vw
+    .photos_photo-item-hidden
+        display none
 
     .photos_button-show-all
         display flex
@@ -108,16 +109,15 @@
     font-weight: 500
     color: #37373F
 
-.photos__photos-container
-    display grid
-    grid-template-columns: 1fr 1fr 1fr 1fr
 
 .photos_photo-item
-    height auto
-    margin-bottom 15px
+    max-width 100%
 
 .photos_button-show-all__arrow
     margin 0 15px 0 15px
+
+.photos_button-show-all__arrow-flipped
+    transform: rotate(180deg);
 
 .photos_button-show-all__caption
     font-weight: 500
@@ -130,3 +130,4 @@
     height 1px
     width 100%
     background-color #C7C7C7
+

@@ -25,3 +25,31 @@ function init () {
     myMap.geoObjects.add(myPlacemark);
 }
 
+
+$('.photos_button-show-all').click(function(){ //переключение видимости полного списка фото
+    var caption = $(this).children('.photos_button-show-all__caption');
+    var arrows = $(this).children('.photos_button-show-all__arrow');
+    $('.photos_photo-item').each(function(index) {//код скрытия-показа
+        if (index > 7){
+            $(this).toggleClass('photos_photo-item-hidden');
+        }
+    })
+    
+    caption.each(function(index){//изменение загловка кнопки
+        if ($(this).text() == "Показать все фото"){
+            $(this).text("Скрыть часть фото");
+        }
+        else{
+            $(this).text("Показать все фото");
+        }
+    });
+
+    arrows.each(function(){//поворачиваем направляющие на кнопке
+        $(this).toggleClass('photos_button-show-all__arrow-flipped')
+    })
+
+
+})
+
+
+
