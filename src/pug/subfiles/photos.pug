@@ -1,22 +1,9 @@
+-console.log(locals.images);
 div(class="photos")
     p(class="photos_caption") Фотографии пакета:
     div(class="photos__photos-container")
-        img(class="photos_photo-item" src="img/photo1.png" alt="")
-        img(class="photos_photo-item" src="img/photo1.png" alt="")
-        img(class="photos_photo-item" src="img/photo1.png" alt="")
-        img(class="photos_photo-item" src="img/photo1.png" alt="")
-        img(class="photos_photo-item" src="img/photo1.png" alt="")
-        img(class="photos_photo-item" src="img/photo1.png" alt="")
-        img(class="photos_photo-item" src="img/photo1.png" alt="")
-        img(class="photos_photo-item" src="img/photo1.png" alt="")
-        img(class="photos_photo-item" src="img/photo1.png" alt="")
-        img(class="photos_photo-item" src="img/photo1.png" alt="")
-        img(class="photos_photo-item" src="img/photo1.png" alt="")
-        img(class="photos_photo-item" src="img/photo1.png" alt="")
-        img(class="photos_photo-item" src="img/photo1.png" alt="")
-        img(class="photos_photo-item" src="img/photo1.png" alt="")
-        img(class="photos_photo-item" src="img/photo1.png" alt="")
-        img(class="photos_photo-item" src="img/photo1.png" alt="")
+        each source in locals.images
+            img(class="photos_photo-item" src="img/photos-pack/" + source)
     div(class="photos_button-show-all photos_button-show-all-con")
         img(class="photos_button-show-all__arrow" src="svg/arrow.svg" alt="")
         a(class="photos_button-show-all__caption") Показать все фото

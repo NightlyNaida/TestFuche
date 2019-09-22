@@ -4,6 +4,6 @@ module.exports = function(){
             server: 'build'
         });
      
-        $.browserSync.watch('build/**/*.*').on('change', $.browserSync.reload);
+        $.browserSync.watch('build').on('change', $.browserSync.reload);
     });
 }
