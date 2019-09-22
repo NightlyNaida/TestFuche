@@ -52,4 +52,9 @@ $('.photos_button-show-all').click(function(){ //переключение вид
 })
 
 
-
+$('.description-form__image').click(function(){//функция замены картинки на видео
+    var height = $(this).height();
+    $(this).after('<iframe width="100%" height="'+ height +'" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&amp;loop=1&amp;&amp;playlist=Video_ID" ' +
+                'frameborder="0" allow="accelerometer; autoplay=1; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+    $(this).addClass("description-form__image-hidden");
+})
