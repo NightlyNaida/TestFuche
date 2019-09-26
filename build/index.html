@@ -9,6 +9,53 @@
     <script src="libs.min.js"></script>
   </head>
   <body>
+    <div class="modal">
+      <div class="modal__window">
+        <button class="modal__close-button"></button>
+        <h1 class="modal__caption">Бронирование</h1>
+        <form class="modal__form" action="" method="GET">
+              <div class="modal__input-area">
+                <label class="modal__input-caption ">Дата</label>
+                <input class="modal__input modal__input-margin-top" type="date" placeholder="">
+              </div>
+              <div class="modal__input-area">
+                <label class="modal__input-caption ">Email</label>
+                <input class="modal__input modal__input-margin-top" type="email" placeholder="Ваша почта">
+              </div>
+              <div class="modal__input-area">
+                <label class="modal__input-caption ">Имя</label>
+                <input class="modal__input modal__input-margin-top" type="text" placeholder="">
+              </div>
+              <div class="modal__input-area">
+                <label class="modal__input-caption ">Фамилия</label>
+                <input class="modal__input modal__input-margin-top" type="text" placeholder="">
+              </div>
+              <div class="modal__input-area">
+                <label class="modal__input-caption ">Телефон</label>
+                <input class="modal__input modal__input-margin-top" type="tel" placeholder="Ваш телефон">
+              </div>
+          <div class="modal__input-area modal__input-area-card">
+            <label class="modal__input-caption">Данные карты</label>
+            <div class="modal_card-info-grid">
+              <div class="modal_card-info-cell modal_card-info-top-cell">
+                <input class="modal__input" type="text" placeholder="Номер карты">
+              </div>
+              <div class="modal_card-info-cell modal_card-info-bottom-left-cell">
+                <input class="modal__input" type="text" placeholder="Срок действия">
+              </div>
+              <div class="modal_card-info-cell modal_card-info-bottom-right-cell">
+                <input class="modal__input" type="text" placeholder="CVV">
+              </div>
+            </div>
+          </div>
+          <div class="modal__input-area modal__input-area-card" style="display:flex; flex-direction:row;">
+            <input class="modal__input-check" type="checkbox">
+            <p class="modal__text">Я согласен с пользовательским соглашением</p>
+          </div>
+          <button class="modal__send-info-button">Забронировать</button>
+        </form>
+      </div>
+    </div>
     <div class="header">
       <div class="header_content"><img class="header__logo" src="svg/logo.svg" alt="">
         <p class="header__telephone-caption">Телефон:</p>
@@ -26,9 +73,7 @@
             <p class="sale-tag__price sale-tag__price-mod">1500₽</p>
           </div><img class="sale-tag__icon sale-tag__icon-mod" src="svg/imageSaleTag.svg" alt="">
         </div>
-        <div class="button">
-          <p class="button__caption">Забронировать место</p>
-        </div>
+        <button class="banner__button">Забронировать место</button>
       </div>
     </div>
     <div class="content content-mod-padding">

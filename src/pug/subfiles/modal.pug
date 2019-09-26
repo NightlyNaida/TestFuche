@@ -1,2 +1,40 @@
+mixin inputArea(caption,typeInput,plchld)
+    div(class="modal__input-area")
+        label(class="modal__input-caption ")= caption
+        input(type=typeInput class="modal__input modal__input-margin-top" placeholder=plchld)    
 
-
+.modal
+    .modal__window
+        button(class="modal__close-button")
+        h1(class="modal__caption") Бронирование
+        form(action="" method="GET" class="modal__form")
+            -var fields = ['Дата','Email','Имя','Фамилия','Телефон'];
+            -var typeInput = "";
+            each caption, index in fields
+                case caption
+                    when "Дата"
+                        -typeInput = "date";
+                        -plchld = ""
+                    when "Email"
+                        -typeInput = "email";
+                        -plchld = "Ваша почта"
+                    when "Телефон"
+                        -typeInput = "tel";
+                        -plchld = "Ваш телефон"
+                    default
+                        -typeInput = "text"
+                        -plchld = ""                
+                +inputArea(caption,typeInput,plchld)
+            div(class="modal__input-area modal__input-area-card")
+                label(class="modal__input-caption") Данные карты
+                .modal_card-info-grid
+                    div(class="modal_card-info-cell modal_card-info-top-cell")
+                        input(type="text" class="modal__input" placeholder="Номер карты")
+                    div(class="modal_card-info-cell modal_card-info-bottom-left-cell")
+                        input(type="text" class="modal__input" placeholder="Срок действия")
+                    div(class="modal_card-info-cell modal_card-info-bottom-right-cell")
+                        input(type="text" class="modal__input" placeholder="CVV") 
+            div(class="modal__input-area modal__input-area-card" style="display:flex; flex-direction:row;")
+                input(type="checkbox" class="modal__input-check")
+                p(class="modal__text") Я согласен с пользовательским соглашением
+            button(class="modal__send-info-button") Забронировать

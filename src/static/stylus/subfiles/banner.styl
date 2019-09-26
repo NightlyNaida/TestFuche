@@ -108,20 +108,27 @@
     padding-bottom: 15px
     margin-left 5px
 
-.button
+.banner__button
     width 200px
     height 50px
     border 2px solid #FFF
+    background rgba(0,0,0,0)
     border-radius: 3px
     display: flex
     align-items: center
     justify-content center
-   
-
-.button__caption
-    font-size: 16px
-    width 100%
-    text-align: center
-    margin: 0
+    transition: 0.6s
+    font-size: 14px
     color: #FFF
     font-weight bold
+
+.banner__button:hover
+    border 2px solid #FC9B09
+    background-color: #FC9B09
+    cursor: pointer
+
+.banner__button:active
+    box-shadow: 0 0 40px rgba(0, 0, 0, .1) inset
+    cursor: pointer
+
+ 

@@ -1,0 +1,98 @@
+.modal
+    position: fixed
+    width: 100vw
+    height 100vh
+    background: rgba(102, 102, 102, 0.5);
+    display flex
+    justify-content: center
+    align-items: center
+    display none
+
+.modal__window
+    max-width 25vw
+    background-color: #ffffff
+    padding: 20px 100px
+    border-radius: 6px
+
+
+.modal__close-button
+    float right
+    width: 20px
+    height 20px
+    background-size: cover
+    background-image: url('svg/Close.svg')
+    background-color: #ffffff
+    border none
+    transform: translate(70px)
+
+.modal__close-button:hover
+        background-image: url('svg/Close-hover.svg')
+        cursor: pointer
+
+.modal__caption
+    text-align: center
+    font-size: 18px
+    color #37373F
+
+.modal__input-area
+    width: 100%
+    margin: 10px 0
+    display flex
+    flex-direction: column
+
+.modal__input-caption
+    font-weight: 500
+    font-size: 14px
+    color #37373F
+
+.modal__input
+    border 1px solid #C7C7C7
+    border-radius 3px
+    padding: 10px
+    font-family 'Montserrat', sans-serif
+
+.modal__input-margin-top
+   margin-top 8px
+   
+.modal_card-info-grid
+    margin-top 8px
+    display: grid
+    grid-template-columns 50% 50%
+    grid-template-rows: auto
+    grid-template-areas: "top-cell top-cell" "bottom-left-cell bottom-right-cell"
+    border 1px solid #c4c4c4
+    border-radius 3px
+
+.modal_card-info-cell
+    display flex
+    flex-direction: column
+
+.modal_card-info-cell > .modal__input
+    border none
+
+.modal_card-info-top-cell
+    grid-area top-cell
+    border-bottom 1px solid #c4c4c4
+
+.modal_card-info-bottom-left-cell
+    grid-area: bottom-left-cell
+
+.modal_card-info-bottom-right-cell
+    grid-area: bottom-right-cell
+    border-left 1px solid #c4c4c4
+
+.modal__send-info-button
+    width: 100%
+    height 50px
+    background: #FC9B09
+    border 0 solid #ffffff
+    border-radius: 5px
+    font-weight: 600
+    font-size: 16px
+    color #FFFFFF
+
+.modal__input-check
+    margin-right 10px
+
+.modal__text
+    font-size: 14px

@@ -58,3 +58,11 @@ $('.description-form__image').click(function(){//функция замены к�
                 'frameborder="0" allow="accelerometer; autoplay=1; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
     $(this).addClass("description-form__image-hidden");
 })
+
+$('.banner__button').click(function(){//вызов модального окна
+    $('.modal').css("display","flex")
+})
+
+$('.modal__close-button').click(function(){
+    $('.modal').css("display","none")
+})
