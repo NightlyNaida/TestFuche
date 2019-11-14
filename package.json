@@ -28,5 +28,13 @@
   },
   "dependencies": {
     "jquery": "^3.4.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NightlyNaida/TestFuture.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NightlyNaida/TestFuture/issues"
+  },
+  "homepage": "https://github.com/NightlyNaida/TestFuture#readme"
 }
